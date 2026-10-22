@@ -1,0 +1,37 @@
+{
+  "name": "root",
+  "type": "folder",
+  "children": [
+    {
+      "name": "src",
+      "type": "folder",
+      "children": [
+        { "name": "index.ts", "type": "file", "size": 1024 },
+        {
+          "name": "components",
+          "type": "folder",
+          "children": [
+            { "name": "Button.tsx", "type": "file", "size": 512 },
+            { "name": "Button.test.tsx", "type": "file", "size": 2048 },
+            { "name": "Modal.tsx", "type": "file", "size": 4380 }
+          ]
+        },
+        {
+          "name": "utils",
+          "type": "folder",
+          "children": [
+            { "name": "format.ts", "type": "file", "size": 870 },
+            { "name": "empty", "type": "folder", "children": [] }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "public",
+      "type": "folder",
+      "children": [{ "name": "logo.png", "type": "file", "size": 1572864 }]
+    },
+    { "name": "package.json", "type": "file", "size": 300 },
+    { "name": "README.md", "type": "file", "size": 5120 }
+  ]
+}

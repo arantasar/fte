@@ -1,1 +1,58 @@
 @import "tailwindcss";
+
+@layer base {
+  :root {
+    color-scheme: light dark;
+  }
+  body {
+    @apply bg-slate-50 text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100;
+    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-sky-500;
+  }
+}
+
+@utility panel {
+  @apply rounded-xl border border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-900;
+}
+
+@utility input {
+  @apply rounded-lg border border-slate-300 bg-white px-3 py-2 placeholder:text-slate-400 dark:border-slate-700 dark:bg-slate-900;
+}
+
+@utility btn {
+  @apply inline-flex items-center justify-center gap-1.5 rounded-lg px-3 py-2 text-sm font-medium transition-colors;
+}
+
+@utility btn-primary {
+  @apply btn bg-sky-600 text-white hover:bg-sky-700;
+}
+
+@utility btn-secondary {
+  @apply btn border border-slate-300 bg-white hover:bg-slate-100 dark:border-slate-700 dark:bg-slate-900 dark:hover:bg-slate-800;
+}
+
+@utility btn-ghost {
+  @apply btn text-slate-600 hover:bg-slate-100 hover:text-slate-900 dark:text-slate-400 dark:hover:bg-slate-800 dark:hover:text-slate-100;
+}
+
+@utility row {
+  @apply flex items-center gap-1.5 rounded-md py-1 pr-2 text-sm hover:bg-slate-100 dark:hover:bg-slate-800;
+}
+
+@utility row-selected {
+  @apply bg-sky-100 text-sky-900 hover:bg-sky-100 dark:bg-sky-900/50 dark:text-sky-100 dark:hover:bg-sky-900/50;
+}
+
+@utility code {
+  @apply rounded bg-slate-100 px-1.5 py-0.5 font-mono text-[0.85em] dark:bg-slate-800;
+}
+
+@utility badge {
+  @apply rounded-full bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600 dark:bg-slate-800 dark:text-slate-300;
+}
+
+@utility callout {
+  @apply rounded-lg border border-sky-200 bg-sky-50 px-4 py-3 text-sm text-sky-900 dark:border-sky-900 dark:bg-sky-950/50 dark:text-sky-200;
+}
